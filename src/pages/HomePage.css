@@ -1,0 +1,16 @@
+.fuzy_homepage {
+  display: flex;
+}
+
+.fuzy_flex_items_sidebar {
+flex: 1 1;
+}
+
+.fuzy_flex_items_middlebar {
+  flex: 4 1;
+}
+
+.fuzy_profile_section_sidebar {
+  flex: 2 1;
+  box-shadow: 0 0px 1px rgba(0, 0, 0, 0.12), 0 0px 1px rgba(0, 0, 0, 0.24);
+}
