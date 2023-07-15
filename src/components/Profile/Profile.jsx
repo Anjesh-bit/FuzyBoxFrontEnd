@@ -4,13 +4,14 @@ import { useParams } from "react-router-dom";
 import { fuzyPostFindPostsOfOneUser } from "../../actions/FuzyPostsActions";
 import { ProfileHeader } from "./ProfileHeader";
 import { ProfileAllPictureSection } from "./ProfileAllPictureSect";
+
 const Profile = () => {
   const dispatch = useDispatch();
   const { fuzyPostsOfOneUserData, loading } = useSelector(
     (state) => state.fuzyPostsOfOneUserData
   );
   const { id } = useParams();
-  
+
   //on mount displays profile
   useEffect(() => {
     dispatch(fuzyPostFindPostsOfOneUser(id));
@@ -28,4 +29,5 @@ const Profile = () => {
     </div>
   );
 };
+
 export default Profile;

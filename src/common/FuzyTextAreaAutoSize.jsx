@@ -1,4 +1,5 @@
 import { TextareaAutosize } from "@mui/material";
+
 const FuzyTextAreaAutoSize = (props) => {
   const {
     ariaLabel,
@@ -9,6 +10,7 @@ const FuzyTextAreaAutoSize = (props) => {
     value,
     onChange,
   } = props;
+
   return (
     <>
       <TextareaAutosize
@@ -23,4 +25,5 @@ const FuzyTextAreaAutoSize = (props) => {
     </>
   );
 };
+
 export { FuzyTextAreaAutoSize };

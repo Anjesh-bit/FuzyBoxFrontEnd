@@ -1,4 +1,5 @@
 import "./MiddleContent.css";
+
 const MiddleContent = () => {
   return (
     <>
@@ -6,4 +7,5 @@ const MiddleContent = () => {
     </>
   );
 };
+
 export default MiddleContent;

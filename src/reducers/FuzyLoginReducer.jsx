@@ -12,6 +12,7 @@ import {
   FUZY_UNAUTHORIZED_ERROR,
   FUZY_UNKNOWN_ERROR,
 } from "../constants/StatusCodeError";
+
 const fuzyLoginReducer = (state = { fuzyLoginData: {} }, action) => {
   switch (action.type) {
     case LOGIN_START:
@@ -36,4 +37,5 @@ const fuzyLoginReducer = (state = { fuzyLoginData: {} }, action) => {
       return { ...state };
   }
 };
+
 export { fuzyLoginReducer };

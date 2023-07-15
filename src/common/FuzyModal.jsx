@@ -8,6 +8,7 @@ const FuzyModal = (props) => {
     ariaLableDescribedBy,
     children,
   } = props;
+
   return (
     <>
       <Modal
@@ -22,4 +23,5 @@ const FuzyModal = (props) => {
     </>
   );
 };
+
 export default FuzyModal;

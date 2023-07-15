@@ -38,4 +38,5 @@ const fuzyPostFindPostsOfOneUser = (id) => async (dispatch) => {
     axiosErrorHandler(dispatch, error);
   }
 };
+
 export { fuzyPostsActions, fuzyPostFindPostsOfOneUser };

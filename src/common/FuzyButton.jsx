@@ -8,4 +8,5 @@ const FuzyButton = (props) => {
     </Button>
   );
 };
+
 export { FuzyButton };

@@ -26,4 +26,5 @@ const fuzyLoginActions = (emailorNumber, password) => async (dispatch) => {
     axiosErrorHandler(dispatch, error);
   }
 };
+
 export { fuzyLoginActions };

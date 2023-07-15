@@ -4,6 +4,7 @@
   list-style: none;
   padding-left: 1em;
 }
+
 .fuzy_modal_sidebar_inner_wrapper ul li {
   margin-top: 1.5em;
   padding-top: 0.5em;
@@ -12,6 +13,7 @@
   cursor: pointer;
   margin-bottom: 1.5em;
 }
+
 .fuzy_modal_sidebar_inner_wrapper ul li:hover {
   background-color: whitesmoke;
   border-radius: 10px;

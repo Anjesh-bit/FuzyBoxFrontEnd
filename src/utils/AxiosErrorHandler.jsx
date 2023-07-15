@@ -7,6 +7,7 @@ import {
   FUZY_UNAUTHORIZED_ERROR,
   FUZY_UNKNOWN_ERROR,
 } from "../constants/StatusCodeError";
+
 const axiosErrorHandler = (dispatch, error) => {
   if (error.response) {
     const codeStatus = error.response.status;
@@ -55,4 +56,5 @@ const axiosErrorHandler = (dispatch, error) => {
     });
   }
 };
+
 export default axiosErrorHandler;

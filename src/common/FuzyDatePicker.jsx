@@ -1,5 +1,6 @@
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
+
 const FuzyDatePicker = (props) => {
   const {
     AdapterDayjs,
@@ -24,4 +25,5 @@ const FuzyDatePicker = (props) => {
     </LocalizationProvider>
   );
 };
+
 export default FuzyDatePicker;

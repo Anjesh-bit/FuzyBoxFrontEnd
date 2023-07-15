@@ -1,4 +1,5 @@
 import Register from "../components/Register/Register";
+
 const RegisterPage = () => {
   return (
     <>
@@ -6,4 +7,5 @@ const RegisterPage = () => {
     </>
   );
 };
+
 export default RegisterPage;

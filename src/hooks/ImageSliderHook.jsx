@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from "react";
+
 const useImageSlider = (initialValue, filesArray = [], props = {}, filter) => {
   const { postsData, loading } = props;
   const lengthRef = useRef(0);
@@ -91,4 +92,5 @@ const useImageSlider = (initialValue, filesArray = [], props = {}, filter) => {
     lengthRef,
   };
 };
+
 export { useImageSlider };

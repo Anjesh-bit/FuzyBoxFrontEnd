@@ -45,4 +45,5 @@ const ProfileAllPictureSection = (props) => {
     </div>
   );
 };
+
 export { ProfileAllPictureSection };

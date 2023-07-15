@@ -29,4 +29,5 @@ const fuzyRegisterActions =
       axiosErrorHandler(dispatch, error);
     }
   };
+  
 export { fuzyRegisterActions };

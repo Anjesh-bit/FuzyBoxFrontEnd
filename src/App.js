@@ -9,6 +9,7 @@ import {
   RouterProvider,
   Route,
 } from "react-router-dom";
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
     </Route>
   )
 );
+
 function App() {
   return (
     <div className="fuzzy_app">

@@ -24,7 +24,7 @@ const ProfileHeader = (props) => {
       setLengthPosts(lengthPosts);
     }
   }, [props, loading]);
-  console.log(users);
+
   return (
     <div className="fuzy_header_outer_wrapper">
       <div className="fuzy_right_header_section">
@@ -51,4 +51,5 @@ const ProfileHeader = (props) => {
     </div>
   );
 };
+
 export { ProfileHeader };

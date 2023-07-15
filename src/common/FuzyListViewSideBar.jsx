@@ -36,23 +36,27 @@ const style = {
   outline: "none",
   p: 2,
 };
+
 const chevronLeftStyle = {
   position: "absolute",
   top: "50%",
   transform: "translateY(-50%)",
   left: 0,
 };
+
 const chevronRightStyle = {
   position: "absolute",
   top: "50%",
   transform: "translateY(-50%)",
   right: 0,
 };
+
 const textAreaStyle = {
   minWidth: 300,
   border: "none",
   textAlign: "center",
 };
+
 const buttonStyles = {
   outline: "none",
   border: "none",
@@ -65,6 +69,7 @@ const buttonStyles = {
     border: "none",
   },
 };
+
 const ListViewSideBar = () => {
   const dispatch = useDispatch();
   const { open } = useSelector((state) => state.fuzyModelData);

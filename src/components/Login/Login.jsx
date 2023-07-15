@@ -4,6 +4,7 @@ import { fuzyLoginActions } from "../../actions/FuzyLoginActions";
 import "./Login.css";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+
 const Login = () => {
   const [value, setValue] = useState("");
   const dispatch = useDispatch();
@@ -15,7 +16,7 @@ const Login = () => {
       navigate("/");
     }
   }, [navigate, fuzyLoginData]);
-  
+
   const onHandleLoginChange = (event) => {
     event.preventDefault();
     const { name, value } = event.target;
@@ -61,4 +62,5 @@ const Login = () => {
     </div>
   );
 };
+
 export default Login;

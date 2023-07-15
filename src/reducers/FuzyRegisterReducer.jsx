@@ -11,6 +11,7 @@ import {
   FUZY_UNAUTHORIZED_ERROR,
   FUZY_UNKNOWN_ERROR,
 } from "../constants/StatusCodeError";
+
 const fuzyRegisterReducer = (state = { fuzyRegisterData: {} }, action) => {
   switch (action.type) {
     case REGISTER_USER_START:
@@ -35,4 +36,5 @@ const fuzyRegisterReducer = (state = { fuzyRegisterData: {} }, action) => {
       return { ...state };
   }
 };
+
 export { fuzyRegisterReducer };

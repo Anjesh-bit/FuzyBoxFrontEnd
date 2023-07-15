@@ -23,4 +23,5 @@ const fuzyModalCloseActions = (opened) => (dispatch) => {
     });
   }
 };
+
 export { fuzyModalOpenActions, fuzyModalCloseActions };

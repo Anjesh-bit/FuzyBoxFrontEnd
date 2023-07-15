@@ -10,4 +10,5 @@ const decodeToken = (token) => {
   // Return the data object
   return data;
 };
+
 export default decodeToken;

@@ -16,4 +16,5 @@ const fuzyModalReducers = (state = {}, action) => {
       return { ...state };
   }
 };
+
 export { fuzyModalReducers };

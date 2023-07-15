@@ -13,6 +13,7 @@ import {
   FUZY_UNAUTHORIZED_ERROR,
   FUZY_UNKNOWN_ERROR,
 } from "../constants/StatusCodeError";
+
 const fuzyPostsReducer = (state = { fuzyPostData: "" }, action) => {
   switch (action.type) {
     case ON_POST_CREATE_START:
@@ -37,6 +38,7 @@ const fuzyPostsReducer = (state = { fuzyPostData: "" }, action) => {
       return { ...state };
   }
 };
+
 const fuzyPostFindPostsOfOneUserReducer = (
   state = [{ fuzyPostsOfOneUserData: "" }],
   action

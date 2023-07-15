@@ -3,6 +3,7 @@ import SideBar from "../components/SideBar/SideBar";
 import MiddleContent from "../components/MiddleContent/MiddleContent";
 import ProfileSectionSideBar from "../components/SideBar/ProfileSectionSideBar";
 import "./HomePage.css";
+
 const HomePage = () => {
   return (
     <div>
@@ -21,4 +22,5 @@ const HomePage = () => {
     </div>
   );
 };
+
 export default HomePage;
