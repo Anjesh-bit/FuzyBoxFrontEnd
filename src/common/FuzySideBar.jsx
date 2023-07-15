@@ -1,6 +1,7 @@
-import "./ModalSideBar.css";
-import ListViewSideBar from "./ListViewSideBar";
-const ModalSideBar = () => {
+import "./FuzySideBar.css";
+import ListViewSideBar from "./FuzyListViewSideBar";
+
+const FuzySideBar = () => {
   return (
     <div className="fuzy_modal_sidebar_main_wrapper">
       <div className="fuzy_modal_sidebar_inner_wrapper">
@@ -9,4 +10,5 @@ const ModalSideBar = () => {
     </div>
   );
 };
-export default ModalSideBar;
+
+export default FuzySideBar;

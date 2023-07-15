@@ -1,0 +1,44 @@
+.fuzy_pp_outer_wrapper {
+  padding: 1em;
+}
+
+.fuzy_pp_inner_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fuzy_pp_inner_wrapper ul {
+  list-style: none;
+}
+
+.fuzy_image_wrapper {
+  position: relative;
+  height: 300px;
+  width: 300px;
+}
+
+.fuzy_image_wrapper img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  max-width: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  object-position: top;
+}
+
+.chevron_left,
+.chevron_right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.chevron_left {
+  left: 0;
+}
+
+.chevron_right {
+  right: 0;
+}

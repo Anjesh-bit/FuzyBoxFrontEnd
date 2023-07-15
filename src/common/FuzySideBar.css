@@ -8,11 +8,12 @@
   margin-top: 1.5em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+  transition: padding-left 0.1s ease-in-out;
   cursor: pointer;
   margin-bottom: 1.5em;
 }
 .fuzy_modal_sidebar_inner_wrapper ul li:hover {
-  background-color: #ccc;
-  
-  
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding-left: 0.5em;
 }

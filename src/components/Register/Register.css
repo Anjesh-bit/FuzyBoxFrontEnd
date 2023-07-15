@@ -1,0 +1,17 @@
+.fuzy_register_outer_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.fuzy_register_inner_wrapper {
+  width: 100%;
+  background-color: whitesmoke;
+  padding: 2em;
+  max-width: 600px;
+}
+
+.fuzy_profile h4{
+  
+}

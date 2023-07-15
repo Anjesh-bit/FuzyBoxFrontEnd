@@ -1,0 +1,24 @@
+.fuzy_header_outer_wrapper {
+  display: flex;
+  column-gap: 5em;
+  padding: 1em;
+}
+.fuzy_left_header_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1em;
+}
+.fuzy_left_header_middle_section ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  column-gap: 3em;
+}
+
+.fuzy_left_header_bottom_section ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  row-gap: 1em;
+}

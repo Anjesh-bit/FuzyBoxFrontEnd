@@ -1,0 +1,30 @@
+.fuzy_list_views li {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  list-style: none;
+}
+.fuzy_outer_list_wrapper li {
+  list-style: none;
+}
+.fuzy_flex_items {
+  display: flex;
+  padding-top: 1em;
+}
+.fuzy_image_wrapper {
+  position: relative;
+  width: 500px;
+  height: 70vh;
+}
+.fuzy_image_wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.fuzy_file_headline {
+  display: flex;
+  justify-content: space-between;
+}
+.fuzy_form_files {
+  align-self: flex-start;
+}

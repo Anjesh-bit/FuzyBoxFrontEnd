@@ -1,0 +1,18 @@
+.fuzzy_textfields_wrapper input {
+  width: 100%;
+  padding: 0.8em;
+  border: 2px solid #3c6255;
+  border-radius: 5px;
+  margin-top: 2em;
+}
+
+.fuzy_sign_up_btn, .fuzy_sign_in_btn {
+  text-align: center !important;
+  background-color: #3c6255;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.fuzy_sign_up_btn:hover {
+  background-color: #36574b;
+}
