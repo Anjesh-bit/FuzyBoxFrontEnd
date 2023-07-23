@@ -23,6 +23,7 @@ const fuzyPostsActions = (postData) => async (dispatch) => {
     axiosErrorHandler(dispatch, error);
   }
 };
+
 const fuzyPostFindPostsOfOneUser = (id) => async (dispatch) => {
   try {
     dispatch({ type: ON_POST_FINDALLPOST_START });
@@ -33,7 +34,6 @@ const fuzyPostFindPostsOfOneUser = (id) => async (dispatch) => {
       type: ON_POST_FINDALLPOST_SUCCESS,
       payload: fuzyPostsDataResponse,
     });
-    
   } catch (error) {
     axiosErrorHandler(dispatch, error);
   }

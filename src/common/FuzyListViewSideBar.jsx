@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
-import { listViewModels } from "../data/ListViewSideBarModels";
 import { Box, Typography } from "@mui/material";
 import { FuzyButton } from "./FuzyButton";
 import { FuzyTextAreaAutoSize } from "./FuzyTextAreaAutoSize";
@@ -204,34 +203,35 @@ const ListViewSideBar = () => {
       >
         <>{!filesArray?.length ? <PostCreate /> : <PictureReviews />}</>
       </FuzyModal>
+
       <ul className="fuzy_list_views">
         <li>
           <HomeIcon />
-          {listViewModels.home}
+          Home
         </li>
         <li>
           <SearchIcon />
-          {listViewModels.search}
+          Search
         </li>
         <li>
           <ExploreOutlinedIcon />
-          {listViewModels.explore}
+          Explore
         </li>
         <li>
           <VideoCameraFrontOutlinedIcon />
-          {listViewModels.shortClips}
+          Short Clips
         </li>
         <li>
           <MessageOutlinedIcon />
-          {listViewModels.message}
+          Message
         </li>
         <li>
           <NotificationsActiveOutlinedIcon />
-          {listViewModels.notification}
+          Notification
         </li>
         <li onClick={onHandleModalOpen}>
           <AddOutlinedIcon />
-          {listViewModels.createPost}
+          Create Posts
         </li>
       </ul>
     </>
