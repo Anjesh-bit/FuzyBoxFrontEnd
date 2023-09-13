@@ -9,14 +9,17 @@ import {
   RouterProvider,
   Route,
 } from "react-router-dom";
+import UsersGuard from "./Guard";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
-      <Route index path="/" element={<HomePage />} />
       <Route exact path="accounts/register" element={<RegisterPage />} />
       <Route exact path="accounts/login" element={<LoginPage />} />
-      <Route exact path="/profile/:id" element={<ProfilePage />} />
+      <Route element={<UsersGuard />}>
+        <Route index path="/" element={<HomePage />} />
+        <Route exact path="/profile/:id" element={<ProfilePage />} />
+      </Route>
     </Route>
   )
 );

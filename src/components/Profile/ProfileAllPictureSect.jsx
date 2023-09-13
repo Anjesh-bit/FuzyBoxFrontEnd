@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from "react";
 import { useImageSlider } from "../../hooks/ImageSliderHook";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";

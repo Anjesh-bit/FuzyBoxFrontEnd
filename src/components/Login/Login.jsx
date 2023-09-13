@@ -4,6 +4,7 @@ import { fuzyLoginActions } from "../../actions/FuzyLoginActions";
 import "./Login.css";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { getCookies } from "../../utils/Cookies";
 
 const Login = () => {
   const [value, setValue] = useState("");
@@ -12,7 +13,7 @@ const Login = () => {
   const { fuzyLoginData } = useSelector((state) => state.fuzyLoginData);
 
   useEffect(() => {
-    if (fuzyLoginData) {
+    if (fuzyLoginData && getCookies("token")) {
       navigate("/");
     }
   }, [navigate, fuzyLoginData]);

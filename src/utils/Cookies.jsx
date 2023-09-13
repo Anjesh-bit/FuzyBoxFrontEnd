@@ -9,4 +9,8 @@ const setCookies = (key, value) => {
   return Cookies.set(key, value, { expires: 1 });
 };
 
-export { getCookies, setCookies };
+const deleteCookies = (key) => {
+  return Cookies.remove(key);
+};
+
+export { getCookies, setCookies, deleteCookies };

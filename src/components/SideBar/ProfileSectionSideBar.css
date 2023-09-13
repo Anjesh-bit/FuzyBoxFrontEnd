@@ -1,0 +1,10 @@
+.suggestions_main_wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2em;
+}
+
+.suggestions_main_wrapper::before {
+  content: "Suggested for you";
+  color: rgba(0, 0, 0, 0.5);
+}

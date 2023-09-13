@@ -1,8 +1,9 @@
 import {
   LOGIN_START,
   LOGIN_SUCCESS,
-  LOGIN_FAILED,
+  LOGOUT_USERS,
 } from "../constants/FuzyLoginConstant";
+
 import {
   FUZY_404_NOT_FOUND,
   FUZY_BAD_REQUEST,
@@ -19,6 +20,8 @@ const fuzyLoginReducer = (state = { fuzyLoginData: {} }, action) => {
       return { ...state, loading: false };
     case LOGIN_SUCCESS:
       return { ...state, fuzyLoginData: action.payload, loading: true };
+    case LOGOUT_USERS:
+      return {};
     case FUZY_404_NOT_FOUND:
       return { ...state, fuzyError: action.payload, loading: false };
     case FUZY_BAD_REQUEST:

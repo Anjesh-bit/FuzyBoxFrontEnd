@@ -4,16 +4,24 @@ import { fuzyLoginReducer } from "./reducers/FuzyLoginReducer";
 import { fuzyRegisterReducer } from "./reducers/FuzyRegisterReducer";
 import { fuzyModalReducers } from "./reducers/FuzyModalReducer";
 import {
+  fuzyUserFindAllReducer,
+  fuzyUserFindSingleReducer,
+} from "./reducers/FuzyUsersReducer";
+import {
   fuzyPostsReducer,
   fuzyPostFindPostsOfOneUserReducer,
 } from "./reducers/FuzyPostsReducers";
+
 const reducers = combineReducers({
   fuzyRegisterData: fuzyRegisterReducer,
   fuzyLoginData: fuzyLoginReducer,
   fuzyModelData: fuzyModalReducers,
+  fuzyUserAllData: fuzyUserFindAllReducer,
+  fuzyUserSingleData: fuzyUserFindSingleReducer,
   fuzyPostsData: fuzyPostsReducer,
   fuzyPostsOfOneUserData: fuzyPostFindPostsOfOneUserReducer,
 });
+
 //initial value for the store:(by default initail value is null):
 const fuzyLoginLocalStorage = () => {
   if (localStorage.getItem("fuzyUsers")) {
@@ -22,6 +30,7 @@ const fuzyLoginLocalStorage = () => {
     return null;
   }
 };
+
 const initialState = {
   fuzyRegisterData: { loading: false },
   //data persists when reload:
@@ -30,9 +39,12 @@ const initialState = {
     fuzyLoginData: fuzyLoginLocalStorage(),
   },
   fuzyModelData: { open: false },
+  fuzyUserAllData: { loading: false },
+  fuzyUserSingleData: { loading: false },
   fuzyPostsData: { loading: false },
   fuzyPostsOfOneUserData: { loading: false, fuzyPostsOfOneUserData: [{}] },
 };
+
 //middleware thUnk allows action creators to return function instead of action objects:(Used for async task)
 const middleware = [thunk];
 const Store = () => {
@@ -50,4 +62,5 @@ const Store = () => {
     )
   );
 };
+
 export default Store;

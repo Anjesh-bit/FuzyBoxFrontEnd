@@ -16,6 +16,11 @@
   display: flex;
   align-items: center;
   column-gap: 3em;
+  justify-content: center;
+}
+
+.settingsIcon {
+  vertical-align: middle;
 }
 
 .fuzy_left_header_bottom_section ul {
@@ -24,3 +29,5 @@
   list-style: none;
   row-gap: 1em;
 }
+
+
