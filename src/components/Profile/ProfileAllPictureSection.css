@@ -3,8 +3,9 @@
 }
 
 .fuzy_pp_inner_wrapper {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
 }
 
 .fuzy_pp_inner_wrapper ul {
@@ -13,8 +14,7 @@
 
 .fuzy_image_wrapper {
   position: relative;
-  height: 300px;
-  width: 300px;
+  height: 400px;
 }
 
 .fuzy_image_wrapper img {
